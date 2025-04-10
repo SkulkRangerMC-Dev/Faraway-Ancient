@@ -1,0 +1,19 @@
+{
+  "temple_sunrise": {
+    "sounds": [
+      {
+        "name": "faraway:temple_sunrise",
+        "stream": true
+      }
+    ]
+  },
+
+  "helios": {
+    "sounds": [
+      {
+        "name": "faraway:helios",
+        "stream": true
+      }
+    ]
+  }
+}

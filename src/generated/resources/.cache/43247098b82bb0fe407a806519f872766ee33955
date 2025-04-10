@@ -1,0 +1,10 @@
+// 1.20.1	2025-04-09T17:37:15.6665187	Block States: faraway
+ff5083f7ed2a9e238dcdc6648389cfc6118cd3a8 assets/faraway/blockstates/ancient_dirt.json
+71e6cdb256d6e1ba68d2db78334610abfb3b38d9 assets/faraway/blockstates/ancient_grass.json
+7ba1e3824e818fde995e6487bc117e1bfae3934d assets/faraway/blockstates/ancient_resin_ore.json
+a7e5cb55ea6a5e35118f72fcabc8be50c11150d4 assets/faraway/models/block/ancient_dirt.json
+24246e69b85498c514e1d1cccd951959fb05529f assets/faraway/models/block/ancient_grass_block.json
+eba075957b9b6cab30022577119bcdaff8eadc8d assets/faraway/models/block/ancient_resin_ore.json
+fd887d8eb7c15b0a6be5f49281beeb3f06105972 assets/faraway/models/item/ancient_dirt.json
+28d28600312b55334740e88d757cde2107baaadf assets/faraway/models/item/ancient_grass.json
+065c3ca4fe51d5d836f8c4792d63649c8f80ad72 assets/faraway/models/item/ancient_resin_ore.json

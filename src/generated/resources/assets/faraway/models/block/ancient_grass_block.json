@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "faraway:block/ancient_dirt",
+    "east": "faraway:block/ancient_grass_block_side",
+    "north": "faraway:block/ancient_grass_block_side",
+    "south": "faraway:block/ancient_grass_block_side",
+    "up": "faraway:block/ancient_grass_block_top",
+    "west": "faraway:block/ancient_grass_block_side"
+  }
+}
