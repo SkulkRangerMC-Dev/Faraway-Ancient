@@ -19,6 +19,12 @@ public class FarawayAncientItems {
     public static final RegistryObject<Item> RESIN = ITEMS.register("resin",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> ANCIENT_BERRIES = ITEMS.register("ancient_berries",
+            () -> new Item(new Item.Properties().food(AncientFoods.MYSTIC_BERRIES)));
+
+    public static final RegistryObject<Item> GYRO_PITA = ITEMS.register("ancient_berries",
+            () -> new Item(new Item.Properties().food(AncientFoods.GYRO_PITA)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -25,9 +25,11 @@ public class AncientArtifactClass {
 
                         pOutput.accept(FarawayAncientItems.ANCIENT_SHOVEL.get());
                         pOutput.accept(FarawayAncientItems.RESIN.get());
+                        pOutput.accept(FarawayAncientItems.ANCIENT_BERRIES.get());
 
                         pOutput.accept(FarawayAncientBlocks.ANCIENT_DIRT.get());
                         pOutput.accept(FarawayAncientBlocks.ANCIENT_GRASS.get());
+                        pOutput.accept(FarawayAncientBlocks.ANCIENT_RESIN_ORE.get());
 
 
 

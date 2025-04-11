@@ -8,6 +8,7 @@ import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.skulkrange.faraway.FarawayMod;
+import net.skulkrange.faraway.item.AncientFoods;
 import net.skulkrange.faraway.item.FarawayAncientArtifacts;
 import net.skulkrange.faraway.item.FarawayAncientItems;
 
@@ -24,6 +25,9 @@ public class ArtifactModelProvider extends ItemModelProvider {
 
         simpleItem(FarawayAncientItems.ANCIENT_SHOVEL);
         simpleItem(FarawayAncientItems.RESIN);
+
+        simpleItem(FarawayAncientItems.ANCIENT_BERRIES);
+        simpleItem(FarawayAncientItems.GYRO_PITA);
 
 
     }

@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.skulkrange.faraway.FarawayMod;
 import net.skulkrange.faraway.item.FarawayAncientArtifacts;
+import net.skulkrange.faraway.item.FarawayAncientItems;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -22,6 +23,9 @@ public class ArtifactTagGenerator extends ItemTagsProvider {
         this.tag(ItemTags.MUSIC_DISCS)
                 .add(FarawayAncientArtifacts.TEMPLE_SUNRISE_DISC.get())
                 .add(FarawayAncientArtifacts.HELIOS_DISC.get());
+
+        this.tag(ItemTags.FOX_FOOD)
+                .add(FarawayAncientItems.ANCIENT_BERRIES.get());
 
     }
 }
