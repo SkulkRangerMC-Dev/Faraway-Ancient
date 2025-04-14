@@ -11,8 +11,7 @@ import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
-import net.skulkrange.faraway.item.FarawayAncientArtifacts;
-import net.skulkrange.faraway.item.FarawayAncientBlocks;
+import net.skulkrange.faraway.block.FarawayAncientBlocks;
 import net.skulkrange.faraway.item.FarawayAncientItems;
 
 import java.util.Set;

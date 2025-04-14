@@ -7,7 +7,7 @@ import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.skulkrange.faraway.FarawayMod;
-import net.skulkrange.faraway.item.FarawayAncientBlocks;
+import net.skulkrange.faraway.block.FarawayAncientBlocks;
 import net.skulkrange.faraway.util.FarawayTags;
 import org.jetbrains.annotations.Nullable;
 
@@ -29,6 +29,5 @@ public class AncientBlockTagGenerator extends BlockTagsProvider {
 
     this.tag(Tags.Blocks.NEEDS_WOOD_TOOL)
             .add(FarawayAncientBlocks.ANCIENT_RESIN_ORE.get());
-
     }
 }

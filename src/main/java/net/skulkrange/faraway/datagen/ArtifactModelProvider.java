@@ -25,7 +25,6 @@ public class ArtifactModelProvider extends ItemModelProvider {
 
         simpleItem(FarawayAncientItems.ANCIENT_SHOVEL);
         simpleItem(FarawayAncientItems.RESIN);
-
         simpleItem(FarawayAncientItems.ANCIENT_BERRIES);
         simpleItem(FarawayAncientItems.GYRO_PITA);
 

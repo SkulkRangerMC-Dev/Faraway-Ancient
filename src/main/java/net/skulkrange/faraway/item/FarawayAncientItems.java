@@ -8,6 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.skulkrange.faraway.FarawayArtifactToolTier;
 import net.skulkrange.faraway.FarawayMod;
+import net.skulkrange.faraway.item.custom.AncientBerriesItem;
 
 public class FarawayAncientItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -20,9 +21,9 @@ public class FarawayAncientItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> ANCIENT_BERRIES = ITEMS.register("ancient_berries",
-            () -> new Item(new Item.Properties().food(AncientFoods.MYSTIC_BERRIES)));
+            () -> new AncientBerriesItem(new Item.Properties().food(AncientFoods.MYSTIC_BERRIES)));
 
-    public static final RegistryObject<Item> GYRO_PITA = ITEMS.register("ancient_berries",
+    public static final RegistryObject<Item> GYRO_PITA = ITEMS.register("gyro_pita",
             () -> new Item(new Item.Properties().food(AncientFoods.GYRO_PITA)));
 
     public static void register(IEventBus eventBus) {

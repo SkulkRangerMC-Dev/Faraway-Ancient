@@ -1,6 +1,5 @@
-package net.skulkrange.faraway.item;
+package net.skulkrange.faraway.block;
 
-import net.minecraft.client.resources.sounds.Sound;
 import net.skulkrange.faraway.FarawayMod;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -12,6 +11,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.skulkrange.faraway.block.custom.AncientBerryBushBlock;
+import net.skulkrange.faraway.item.FarawayAncientItems;
 
 import java.util.function.Supplier;
 
@@ -26,6 +27,8 @@ public class FarawayAncientBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).sound(SoundType.ROOTED_DIRT)));
         public static final RegistryObject<Block> ANCIENT_RESIN_ORE = registerBlock("ancient_resin_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE).strength(1f).sound(SoundType.STONE)));
+        public static final RegistryObject<Block> ANCIENT_BERRY_BUSH = registerBlock("ancient_berry_bush",
+                () -> new AncientBerryBushBlock( BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).strength(.5f).sound(SoundType.SWEET_BERRY_BUSH).noLootTable()));
 
         private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
             RegistryObject<T> toReturn = BLOCKS.register(name, block);
