@@ -1,8 +1,9 @@
-// 1.20.1	2025-04-12T09:08:09.4235586	Block States: faraway
+// 1.20.1	2025-04-16T17:19:15.7545315	Block States: faraway
 887f8e1b1392d41bafbfc7dfe818525f0d7eee74 assets/faraway/blockstates/ancient_berry_bush.json
 ff5083f7ed2a9e238dcdc6648389cfc6118cd3a8 assets/faraway/blockstates/ancient_dirt.json
 71e6cdb256d6e1ba68d2db78334610abfb3b38d9 assets/faraway/blockstates/ancient_grass.json
 7ba1e3824e818fde995e6487bc117e1bfae3934d assets/faraway/blockstates/ancient_resin_ore.json
+59c17ded3a41de029b404d9ea50e9fe93c0a3f75 assets/faraway/blockstates/marble.json
 bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f assets/faraway/models/block/ancient_berry_bush_stage0.json
 bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f assets/faraway/models/block/ancient_berry_bush_stage1.json
 bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f assets/faraway/models/block/ancient_berry_bush_stage2.json
@@ -10,6 +11,8 @@ bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f assets/faraway/models/block/ancient_ber
 a7e5cb55ea6a5e35118f72fcabc8be50c11150d4 assets/faraway/models/block/ancient_dirt.json
 24246e69b85498c514e1d1cccd951959fb05529f assets/faraway/models/block/ancient_grass_block.json
 eba075957b9b6cab30022577119bcdaff8eadc8d assets/faraway/models/block/ancient_resin_ore.json
+68b952a2dd5f4769bc3dd78967b4bdb19fdb8f83 assets/faraway/models/block/marble.json
 fd887d8eb7c15b0a6be5f49281beeb3f06105972 assets/faraway/models/item/ancient_dirt.json
 28d28600312b55334740e88d757cde2107baaadf assets/faraway/models/item/ancient_grass.json
 065c3ca4fe51d5d836f8c4792d63649c8f80ad72 assets/faraway/models/item/ancient_resin_ore.json
+e2390eca69c32691ba5b912dba70c2af344b9b79 assets/faraway/models/item/marble.json

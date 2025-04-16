@@ -23,6 +23,7 @@ public class AncientBlockStateProvider extends BlockStateProvider {
         grassBlockWithItem(FarawayAncientBlocks.ANCIENT_GRASS);
         blockWithItem(FarawayAncientBlocks.ANCIENT_DIRT);
         blockWithItem(FarawayAncientBlocks.ANCIENT_RESIN_ORE);
+        blockWithItem(FarawayAncientBlocks.MARBLE);
 
         getVariantBuilder(FarawayAncientBlocks.ANCIENT_BERRY_BUSH.get())
                 .forAllStates(state -> {

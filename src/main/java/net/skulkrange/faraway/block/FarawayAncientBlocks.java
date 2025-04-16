@@ -29,6 +29,8 @@ public class FarawayAncientBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE).strength(1f).sound(SoundType.STONE)));
         public static final RegistryObject<Block> ANCIENT_BERRY_BUSH = registerBlock("ancient_berry_bush",
                 () -> new AncientBerryBushBlock( BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).strength(.5f).sound(SoundType.SWEET_BERRY_BUSH).noLootTable()));
+        public static final RegistryObject<Block> MARBLE = registerBlock("marble",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).strength(4.5F, 3.0F).sound(SoundType.STONE)));
 
         private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
             RegistryObject<T> toReturn = BLOCKS.register(name, block);

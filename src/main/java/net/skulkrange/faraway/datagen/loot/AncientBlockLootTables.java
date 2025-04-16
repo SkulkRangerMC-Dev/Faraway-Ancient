@@ -30,6 +30,10 @@ public class AncientBlockLootTables extends BlockLootSubProvider {
 
         this.add(FarawayAncientBlocks.ANCIENT_RESIN_ORE.get(),
                 block -> createCopperLikeOreDrops(FarawayAncientBlocks.ANCIENT_RESIN_ORE.get(), FarawayAncientItems.RESIN.get()));
+
+        this.add(FarawayAncientBlocks.MARBLE.get(),
+                block -> createAncientGrassDrops(FarawayAncientBlocks.MARBLE.get(), FarawayAncientBlocks.MARBLE.get()));
+
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

@@ -32,21 +32,21 @@ public class FarawayDimensions {
 
     public static void bootstrapType(BootstapContext<DimensionType> context) {
         context.register(FARAWAY_DIM_TYPE, new DimensionType(
-                OptionalLong.of(12000), // fixedTime
+                OptionalLong.of(6000), // fixedTime
                 true, // hasSkylight
                 false, // hasCeiling
                 false, // ultraWarm
                 true, // natural
                 1.0, // coordinateScale
                 true, // bedWorks
-                false, // respawnAnchorWorks
+                true, // respawnAnchorWorks
                 0, // minY
                 256, // height
                 256, // logicalHeight
                 BlockTags.INFINIBURN_OVERWORLD, // infiniburn
                 BuiltinDimensionTypes.OVERWORLD_EFFECTS, // effectsLocation
                 1.0f, // ambientLight
-                new DimensionType.MonsterSettings(false, false, ConstantInt.of(0), 0)));
+                new DimensionType.MonsterSettings(true, false, ConstantInt.of(0), 0)));
     }
 
     public static void bootstrapStem(BootstapContext<LevelStem> context) {

@@ -1,5 +1,6 @@
 package net.skulkrange.faraway.datagen;
 
+import com.ibm.icu.impl.ICUService;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -25,6 +26,8 @@ public class DataGenerators {
 
         generator.addProvider(event.includeClient(), new AncientBlockStateProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new ArtifactModelProvider(packOutput, existingFileHelper));
+
+        generator.addProvider(event.includeClient(), new FarawayWorldGenProvider(packOutput, lookupProvider));
 
         AncientBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
                 new AncientBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));

@@ -17,6 +17,7 @@ import net.skulkrange.faraway.item.FarawayAncientArtifacts;
 import net.skulkrange.faraway.block.FarawayAncientBlocks;
 import net.skulkrange.faraway.item.FarawayAncientItems;
 import net.skulkrange.faraway.sound.AncientSounds;
+import net.skulkrange.faraway.worldgen.dimension.FarawayDimensions;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file

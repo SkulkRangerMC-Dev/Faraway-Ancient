@@ -24,15 +24,23 @@ public class AncientKnowledgeStone extends Item {
 
     @Override
     public InteractionResult useOn(UseOnContext context) {
-        System.out.println("Ancient Knowledge Stone used!");
         Player player = context.getPlayer();
         Level level = context.getLevel();
         BlockPos clickedPos = context.getClickedPos();
         ItemStack itemStack = context.getItemInHand();
 
+        // ✅ This only runs on the server
         if (!level.isClientSide() && player instanceof ServerPlayer serverPlayer) {
+            System.out.println("[AncientKnowledgeStone] Item used by player: " + serverPlayer.getName().getString());
+
+            // ✅ Check if the dimension is accessible
             ServerLevel destination = serverPlayer.server.getLevel(FarawayDimensions.FARAWAYDIM_LEVEL_KEY);
-            if (destination != null) {
+
+            if (destination == null) {
+                System.out.println("[AncientKnowledgeStone] ERROR: Destination dimension not found!");
+            } else {
+                System.out.println("[AncientKnowledgeStone] Destination dimension found: " + destination.dimension().location());
+
                 serverPlayer.changeDimension(destination, new ITeleporter() {
                     @Override
                     public Entity placeEntity(Entity entity, ServerLevel currentWorld, ServerLevel newWorld, float yaw, Function<Boolean, Entity> repositionEntity) {
@@ -41,6 +49,7 @@ public class AncientKnowledgeStone extends Item {
                         return teleportedEntity;
                     }
                 });
+
                 itemStack.shrink(1);
                 return InteractionResult.SUCCESS;
             }

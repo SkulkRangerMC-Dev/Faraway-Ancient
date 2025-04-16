@@ -49,7 +49,7 @@ public class AncientBiomes {
         BiomeDefaultFeatures.addDefaultMushrooms(biomeBuilder);
         BiomeDefaultFeatures.addDefaultExtraVegetation(biomeBuilder);
         return new Biome.BiomeBuilder()
-                .hasPrecipitation(true)
+                .hasPrecipitation(false)
                 .downfall(0.8f)
                 .temperature(0.7f)
                 .generationSettings(biomeBuilder.build())
