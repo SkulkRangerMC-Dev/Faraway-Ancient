@@ -17,8 +17,10 @@ import net.skulkrange.faraway.item.FarawayAncientArtifacts;
 import net.skulkrange.faraway.block.FarawayAncientBlocks;
 import net.skulkrange.faraway.item.FarawayAncientItems;
 import net.skulkrange.faraway.sound.AncientSounds;
-import net.skulkrange.faraway.worldgen.dimension.FarawayDimensions;
+
+import net.skulkrange.faraway.worldgen.biome.surface.AncientSurfaceRules;
 import org.slf4j.Logger;
+import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(FarawayMod.MOD_ID)
@@ -45,10 +47,13 @@ public class FarawayMod
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
 
+
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
+
     }
 
     // Add the example block item to the building blocks tab
@@ -74,6 +79,7 @@ public class FarawayMod
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+
 
         }
     }
