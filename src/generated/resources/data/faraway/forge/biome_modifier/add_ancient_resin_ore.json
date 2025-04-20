@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "faraway:ancient_plains",
+  "biomes": "#minecraft:is_overworld",
   "features": "faraway:ancient_resin_ore_placed",
   "step": "underground_ores"
 }
