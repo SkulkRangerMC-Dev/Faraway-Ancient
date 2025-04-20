@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "faraway:block/athenwood_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "faraway:block/athenwood_log"
+    },
+    "axis=z": {
+      "model": "faraway:block/athenwood_log_horizontal",
+      "x": 90
+    }
+  }
+}

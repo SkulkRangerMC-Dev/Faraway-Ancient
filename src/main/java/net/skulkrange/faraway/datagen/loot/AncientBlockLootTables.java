@@ -31,8 +31,16 @@ public class AncientBlockLootTables extends BlockLootSubProvider {
         this.add(FarawayAncientBlocks.ANCIENT_RESIN_ORE.get(),
                 block -> createCopperLikeOreDrops(FarawayAncientBlocks.ANCIENT_RESIN_ORE.get(), FarawayAncientItems.RESIN.get()));
 
-        this.add(FarawayAncientBlocks.MARBLE.get(),
-                block -> createAncientGrassDrops(FarawayAncientBlocks.MARBLE.get(), FarawayAncientBlocks.MARBLE.get()));
+        this.dropSelf(FarawayAncientBlocks.MARBLE.get());
+
+        this.dropSelf(FarawayAncientBlocks.ATHENWOOD_LOG.get());
+        this.dropSelf(FarawayAncientBlocks.ATHENWOOD.get());
+        this.dropSelf(FarawayAncientBlocks.STRIPPED_ATHENWOOD_LOG.get());
+        this.dropSelf(FarawayAncientBlocks.STRIPPED_ATHENWOOD.get());
+        this.dropSelf(FarawayAncientBlocks.ATHENWOOD_PLANKS.get());
+
+        this.add(FarawayAncientBlocks.ATHENWOOD_LEAVES.get(),
+                block -> createOakLeavesDrops(block, FarawayAncientBlocks.ATHENWOOD_LEAVES.get()));
 
     }
 

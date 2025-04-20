@@ -1,4 +1,7 @@
-// 1.20.1	2025-04-14T19:46:11.9850162	Registries
-dc14a9d1856a0ccc19f9704dd71061bda5df0b80 data/faraway/dimension/farawaydim.json
+// 1.20.1	2025-04-19T20:59:54.1064849	Registries
+75c1c00cc0fff8e4d5f0853deb0256ff44ae2762 data/faraway/dimension/farawaydim.json
 4cfda21b588ffe034df463ba4a6b02339789ca2b data/faraway/dimension_type/farawaydim_type.json
-28c6feca7ce4fd7cdbdb40097b0dae6c2358eafe data/faraway/worldgen/biome/ancient_plains.json
+6b193ad20960781394b7bf9af932192c492aa2b2 data/faraway/forge/biome_modifier/add_ancient_resin_ore.json
+28605e88d29b8399478a02e46b251edaa8e278c4 data/faraway/worldgen/biome/ancient_plains.json
+37049a06ae75fed43525aa6457c2a52ddbade33c data/faraway/worldgen/configured_feature/ancient_resin_ore.json
+ada820cf9922e6a536064336846f04f01dccf365 data/faraway/worldgen/placed_feature/ancient_resin_ore_placed.json

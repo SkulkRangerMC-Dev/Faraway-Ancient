@@ -34,6 +34,13 @@ public class AncientRecipeProvider extends RecipeProvider implements IConditionB
                 .unlockedBy(getHasName(FarawayAncientArtifacts.KNOWLEDGE_STONE.get()), has(FarawayAncientArtifacts.KNOWLEDGE_STONE.get()))
                 .save(pWriter);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, FarawayAncientArtifacts.KNOWLEDGE_STONE.get())
+                .requires(Items.STONE)
+                .requires(FarawayAncientItems.RESIN.get())
+                .unlockedBy(getHasName(FarawayAncientArtifacts.KNOWLEDGE_STONE.get()), has(FarawayAncientArtifacts.KNOWLEDGE_STONE.get()))
+                .save(pWriter);
+
+
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

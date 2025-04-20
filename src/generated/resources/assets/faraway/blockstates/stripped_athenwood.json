@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "faraway:block/stripped_athenwood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "faraway:block/stripped_athenwood"
+    },
+    "axis=z": {
+      "model": "faraway:block/stripped_athenwood_horizontal",
+      "x": 90
+    }
+  }
+}

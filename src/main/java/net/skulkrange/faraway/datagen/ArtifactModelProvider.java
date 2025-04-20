@@ -22,11 +22,14 @@ public class ArtifactModelProvider extends ItemModelProvider {
         simpleItem(FarawayAncientArtifacts.SHOVEL_HEAD);
         simpleItem(FarawayAncientArtifacts.TEMPLE_SUNRISE_DISC);
         simpleItem(FarawayAncientArtifacts.HELIOS_DISC);
+        simpleItem(FarawayAncientArtifacts.KNOWLEDGE_STONE);
 
         simpleItem(FarawayAncientItems.ANCIENT_SHOVEL);
         simpleItem(FarawayAncientItems.RESIN);
         simpleItem(FarawayAncientItems.ANCIENT_BERRIES);
         simpleItem(FarawayAncientItems.GYRO_PITA);
+
+
 
 
     }

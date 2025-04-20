@@ -3,6 +3,7 @@ package net.skulkrange.faraway.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -24,10 +25,9 @@ public class AncientBlockTagGenerator extends BlockTagsProvider {
                 .add(FarawayAncientBlocks.ANCIENT_DIRT.get()).addTag(BlockTags.DIRT)
                 .add(FarawayAncientBlocks.ANCIENT_GRASS.get()).addTag(BlockTags.DIRT);
 
-    this.tag(Tags.Blocks.ORES)
-            .add(FarawayAncientBlocks.ANCIENT_RESIN_ORE.get());
+    this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+            .add(FarawayAncientBlocks.ANCIENT_RESIN_ORE.get())
+            .add(FarawayAncientBlocks.MARBLE.get());
 
-    this.tag(Tags.Blocks.NEEDS_WOOD_TOOL)
-            .add(FarawayAncientBlocks.ANCIENT_RESIN_ORE.get());
     }
 }

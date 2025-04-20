@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "faraway:ancient_plains",
+  "features": "faraway:ancient_resin_ore_placed",
+  "step": "underground_ores"
+}

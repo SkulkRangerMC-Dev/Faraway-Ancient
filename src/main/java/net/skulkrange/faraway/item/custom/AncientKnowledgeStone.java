@@ -29,32 +29,40 @@ public class AncientKnowledgeStone extends Item {
         BlockPos clickedPos = context.getClickedPos();
         ItemStack itemStack = context.getItemInHand();
 
-        // ✅ This only runs on the server
         if (!level.isClientSide() && player instanceof ServerPlayer serverPlayer) {
-            System.out.println("[AncientKnowledgeStone] Item used by player: " + serverPlayer.getName().getString());
+            ServerLevel destination;
 
-            // ✅ Check if the dimension is accessible
-            ServerLevel destination = serverPlayer.server.getLevel(FarawayDimensions.FARAWAYDIM_LEVEL_KEY);
+            // ✅ Determine which dimension to go to
+            if (serverPlayer.level().dimension().equals(FarawayDimensions.FARAWAYDIM_LEVEL_KEY)) {
+                // Player is already in the ancient dimension → go to Overworld
+                destination = serverPlayer.server.getLevel(Level.OVERWORLD);
+                System.out.println("[AncientKnowledgeStone] Player is in ancient dimension, teleporting to Overworld.");
+            } else {
+                // Player is not in ancient dimension → go to Ancient dimension
+                destination = serverPlayer.server.getLevel(FarawayDimensions.FARAWAYDIM_LEVEL_KEY);
+                System.out.println("[AncientKnowledgeStone] Player is in Overworld (or elsewhere), teleporting to ancient dimension.");
+            }
 
             if (destination == null) {
                 System.out.println("[AncientKnowledgeStone] ERROR: Destination dimension not found!");
-            } else {
-                System.out.println("[AncientKnowledgeStone] Destination dimension found: " + destination.dimension().location());
-
-                serverPlayer.changeDimension(destination, new ITeleporter() {
-                    @Override
-                    public Entity placeEntity(Entity entity, ServerLevel currentWorld, ServerLevel newWorld, float yaw, Function<Boolean, Entity> repositionEntity) {
-                        Entity teleportedEntity = repositionEntity.apply(false);
-                        teleportedEntity.setPos(clickedPos.getX(), clickedPos.getY() + 1, clickedPos.getZ());
-                        return teleportedEntity;
-                    }
-                });
-
-                itemStack.shrink(1);
-                return InteractionResult.SUCCESS;
+                return InteractionResult.FAIL;
             }
+
+            // ✅ Teleport the player
+            serverPlayer.changeDimension(destination, new ITeleporter() {
+                @Override
+                public Entity placeEntity(Entity entity, ServerLevel currentWorld, ServerLevel newWorld, float yaw, Function<Boolean, Entity> repositionEntity) {
+                    Entity teleportedEntity = repositionEntity.apply(false);
+                    teleportedEntity.setPos(clickedPos.getX(), clickedPos.getY() + 1, clickedPos.getZ());
+                    return teleportedEntity;
+                }
+            });
+
+            itemStack.shrink(1);
+            return InteractionResult.SUCCESS;
         }
 
         return InteractionResult.FAIL;
     }
+
 }

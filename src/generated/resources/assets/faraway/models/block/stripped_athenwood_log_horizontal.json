@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "faraway:block/stripped_athenwood_log_top",
+    "side": "faraway:block/stripped_athenwood_log"
+  }
+}

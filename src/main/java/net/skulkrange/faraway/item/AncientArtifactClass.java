@@ -32,6 +32,14 @@ public class AncientArtifactClass {
                         pOutput.accept(FarawayAncientBlocks.ANCIENT_GRASS.get());
                         pOutput.accept(FarawayAncientBlocks.ANCIENT_RESIN_ORE.get());
 
+                        pOutput.accept(FarawayAncientBlocks.ATHENWOOD_LOG.get());
+                        pOutput.accept(FarawayAncientBlocks.ATHENWOOD.get());
+                        pOutput.accept(FarawayAncientBlocks.STRIPPED_ATHENWOOD_LOG.get());
+                        pOutput.accept(FarawayAncientBlocks.STRIPPED_ATHENWOOD.get());
+
+                        pOutput.accept(FarawayAncientBlocks.ATHENWOOD_PLANKS.get());
+                        pOutput.accept(FarawayAncientBlocks.ATHENWOOD_LEAVES.get());
+
 
 
 

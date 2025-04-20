@@ -1,5 +1,11 @@
-// 1.20.1	2025-04-16T17:19:15.7565249	Loot Tables
+// 1.20.1	2025-04-19T08:15:00.9960537	Loot Tables
 2b50e249e0c6ee1d304ddb22ae0a1324729f7883 data/faraway/loot_tables/blocks/ancient_dirt.json
 12aefb935119acf56dca972ee2ea6381d75544c8 data/faraway/loot_tables/blocks/ancient_grass.json
 e81ff9b9a849acdbbf64e878141eee706781b67b data/faraway/loot_tables/blocks/ancient_resin_ore.json
-1c72fea861925c739e7f2fff9e08110f23c3cada data/faraway/loot_tables/blocks/marble.json
+43b19abf42ac79a4835ca96640530b0a1b8d1194 data/faraway/loot_tables/blocks/athenwood.json
+1c59fe18e1d85aa119de315ec00c25781b302a51 data/faraway/loot_tables/blocks/athenwood_leaves.json
+8e815fc57f54ec4acff71c28c8c84790baf77994 data/faraway/loot_tables/blocks/athenwood_log.json
+6c011f017113b0b41f395a54cf7927285dd9962d data/faraway/loot_tables/blocks/athenwood_planks.json
+ec2048f2023e9cfff8009623f048c5e5186f6956 data/faraway/loot_tables/blocks/marble.json
+ed6891adc294375243d16b92b83bde66c3ee2a5b data/faraway/loot_tables/blocks/stripped_athenwood.json
+8e6249e0a6108baa8d0d2907ab86b6e1cddd5620 data/faraway/loot_tables/blocks/stripped_athenwood_log.json

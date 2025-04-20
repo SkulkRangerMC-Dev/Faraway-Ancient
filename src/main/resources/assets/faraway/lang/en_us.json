@@ -5,7 +5,17 @@
   "faraway.puzzle_tab": "Anatolian Artifacts",
   "block.faraway.ancient_dirt": "Ancient Dirt",
   "block.faraway.ancient_grass": "Ancient Dirt",
+  "block.faraway.athenwood_log": "Athenwood Log",
+  "block.faraway.athenwood": "Athenwood",
+  "block.faraway.stripped_athenwood_log": "Stripped Athenwood Log",
+  "block.faraway.stripped_athenwood": "Stripped Athenwood",
+  "block.faraway.athenwood_planks": "Athenwood Planks",
+  "block.faraway.athenwood_leaves": "Athenwood Leaves",
+  "block.faraway.ancient_resin_ore": "Ancient Resin Ore",
+
   "item.faraway.knowledge_stone": "Knowledge Stone",
+  "item.faraway.resin": "Resin",
+  "item.faraway.ancient_berries": "Ancient Berries",
 
   "item.faraway.temple_sunrise_disc": "Temple Sunrise Disc",
   "item.faraway.temple_sunrise_disc.desc": "Sasa Dukic - Temple Sunrise",

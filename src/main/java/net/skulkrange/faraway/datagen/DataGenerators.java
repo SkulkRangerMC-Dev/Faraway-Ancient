@@ -31,6 +31,7 @@ public class DataGenerators {
 
         AncientBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
                 new AncientBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
+
         generator.addProvider(event.includeServer(), new ArtifactTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
     }
 }

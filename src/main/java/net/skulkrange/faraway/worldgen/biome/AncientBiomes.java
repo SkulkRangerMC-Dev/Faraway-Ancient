@@ -11,6 +11,9 @@ import net.minecraft.world.level.biome.*;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.skulkrange.faraway.FarawayMod;
 import net.skulkrange.faraway.sound.AncientSounds;
+import net.skulkrange.faraway.worldgen.FarawayBiomeModifiers;
+import net.skulkrange.faraway.worldgen.FarawayConfiguredFeatures;
+import net.skulkrange.faraway.worldgen.FarawayPlacedFeatures;
 
 public class AncientBiomes {
     public static ResourceKey<Biome> ANCIENT_PLAINS = ResourceKey.create(Registries.BIOME,
@@ -39,8 +42,6 @@ public class AncientBiomes {
         //we need to follow the same order as vanilla biomes for the BiomeDefaultFeatures
         globalOverworldGeneration(biomeBuilder);
         BiomeDefaultFeatures.addMossyStoneBlock(biomeBuilder);
-        BiomeDefaultFeatures.addForestFlowers(biomeBuilder);
-        BiomeDefaultFeatures.addFerns(biomeBuilder);
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
         BiomeDefaultFeatures.addExtraGold(biomeBuilder);
 
